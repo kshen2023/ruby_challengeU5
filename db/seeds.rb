@@ -34,7 +34,7 @@ products.each do |product|
   category = Category.find_or_create_by(name: category_name)
 
   Product.create(
-    title: product['title'],
+    title: product['name'],
     description: product['description'],
     price: product['price'],
     stock_quantity: product['stock_quantity'],
